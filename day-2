@@ -1,0 +1,139 @@
+
+//arrays
+const number= [1, 2, 3, 4, 5];
+
+// Length of the array
+const length = number.length;
+console.log("Length:", length);
+
+// Accessing elements
+const firstElement = number[0];
+console.log("First Element:", firstElement);
+
+// Adding elements
+number.push(6); // Adds 6 to the end
+console.log("After push:", number);
+
+// Removing elements
+const lastElement = number.pop(); // Removes and returns the last element
+console.log("Popped element:", lastElement);
+
+// Iterating over elements
+numbers.forEach((number) => {
+  console.log("Number:", number);
+});
+
+// Finding the index of an element
+const index = number.indexOf(3);
+console.log("Index of 3:", index);
+
+// Slicing the array
+const slicedArray = number.slice(1, 3); // Returns a new array [2, 3]
+console.log("Sliced array:", slicedArray);
+
+// Joining array elements into a string
+const joinedString = number.join(", ");
+console.log("Joined string:", joinedString);
+
+// Reversing the array
+const reversedArray = number.reverse();
+console.log("Reversed array:", reversedArray);
+
+// Sorting the array
+const sortedArray = number.sort();
+console.log("Sorted array:", sortedArray);
+
+//program to print first letter of each word in capital
+function cap(word){
+    let w=word.split('')
+    for(i=0;i<w.length-1;i++){
+      w[i]=e[i][0].toUpperCase()+w[i].substr[1]
+        }
+        return w.join('')
+}
+
+//for each loop
+
+array=[]
+const multiply=function (arr,n){
+    arr.forEach((element)=>{
+     array.push(element*n)
+      return array 
+    }
+    );
+}
+var k =multiply([3,6,8],2)
+console.log(array)
+
+//map function t
+array=[]
+const multiply=function (arr,n){
+    array=arr.map((e)=> e*n)
+      return array 
+    }
+let a=multiply([3,6,8],2)
+console.log(array)
+
+
+array=[]
+const multiply=function (arr,n){
+    array=arr.map((e)=>{
+        if(e%2==0)
+        return "even"
+        else
+        return 'odd';
+    })
+      return array 
+    }
+let a=multiply([3,6,8],2)
+console.log(array)
+
+
+
+
+const detail=[
+  {
+      name:'ram',
+      age:20,
+      height:3.8
+  },
+  {
+       name:'raja',
+      age:27,
+      height:4.3
+  },
+  {
+       name:'rosy',
+      age:17,
+      height:5.2
+  },
+  ]
+  
+  //add
+  let add=(id,obj)=>{
+      obj.splice(id, 0,{name:'hello',age:20,height:4.8})
+      obj.join('')
+  }
+let added=add(2,detail)
+console.log('after adding')
+console.log(detail)
+
+  //edit
+ let edit=(id,obj,value)=>
+  {
+      obj[id].name=value
+      obj[id].height=5.4
+  }
+   console.log('before editing')
+  console.log(detail)
+  let edituser=edit(1,detail,'lily')
+  console.log('after editing')
+  console.log(detail)
+  
+//get
+let getdetail=(id)=>{
+    console.log(detail[id])
+}
+console.log('get detail by id')
+  let getdetails=getdetail(1)
+  
